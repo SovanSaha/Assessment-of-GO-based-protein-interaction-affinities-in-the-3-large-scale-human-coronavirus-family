@@ -5,11 +5,17 @@ The work focuses on assessing the host-pathogen 21 protein interaction affinity 
 Usage 
 
 1. ss_comp.py: This file compute the semantic score for any given pair of the target protein. Take input as a list of target protein pairs as a json file. 
-—-------------------—-------------------—------------------- 
-Usage : python SS_comp.py <org> 
-<org> : Target_Virus_Code : example: SARS2,MERS.. . as you prefer the name 
-—-------------------—-------------------—------------------- 
-Please download the SS_Computation directory as it is, change the input file as required, and change the annotation file to the new set of proteins. A sample input format is given in the Annotations directory. The script is in ‘scriptSS’ directory. The output file will be generated in the directory SCORES. for example, ‘Human_CoV.csv’ Next, you can move the resultant file to the input directory for the next step.
+
+   —-------------------—-------------------—------------------- 
+
+   Usage : python SS_comp.py <org> 
+  
+   <org> : Target_Virus_Code : example: SARS2,MERS.. . as you prefer the name 
+
+   —-------------------—-------------------—------------------- 
+
+   Please download the SS_Computation directory as it is, change the input file as required, and change the annotation file to the new set of proteins. A sample     
+   input format is given in the Annotations directory. The script is in ‘scriptSS’ directory. The output file will be generated in the directory SCORES. for example,    ‘Human_CoV.csv’ Next, you can move the resultant file to the input directory for the next step.
   
 2. Host-Pathogen_Score_Computation.py computes the normalized score for each protein-protein interaction (viz. Host-Host, Host-Pathogen, and Pathogen-Pathogen Interaction). It takes ‘Human_CoV.csv’ file as input which contains all six GO annotation values for each protein pair and gives output ‘MR_HsPth_Norm.csv’ which is a normalized score for each protein interaction pair.
   
